@@ -1,12 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF -8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ultrabater</title>
-       <script async src="script.js"></script>
-    </head>
-    <body>
-        <h1 id="titulo">Bienvenidos a Ultrabater!</h1>
-        
-    </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultrabater</title>
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+
+    #carrito {
+      margin-top: 20px;
+      white-space: pre-line;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="titulo">¡Bienvenidos a Ultrabater!</h1>
+  <p>Seleccioná un producto:</p>
+
+  <button data-id="1">Pilas alcalinas ($5000)</button>
+  <button data-id="2">Baterías para notebook ($45000)</button>
+  <button data-id="3">Batería de gel ($30000)</button>
+  <button data-id="4">Cargador para pilas recargables ($60000)</button>
+  <br><br>
+  <button id="ver-carrito">Ver total y productos</button>
+  <button id="salir">Salir de la tienda</button>
+
+  <div id="carrito"></div>
+</body>
+</html>
