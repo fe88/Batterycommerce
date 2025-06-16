@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     actualizarVistaCarrito();
   });
 
-  // Salir (vaciar carrito)
+  // Salir (vaciar carrito):
   document.getElementById("salir").addEventListener("click", () => {
     alert("Gracias por su compra. ¡Vuelva pronto!");
     carrito = [];
