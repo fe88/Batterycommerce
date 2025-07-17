@@ -1,40 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ultrabater</title>
-  <script defer src="script.js"></script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
-
-    button {
-      margin: 5px;
-      padding: 10px 15px;
-      cursor: pointer;
-    }
-
-    #carrito {
-      margin-top: 20px;
-      white-space: pre-line;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ultrabater - Tienda</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-  <h1 id="titulo">¡Bienvenidos a Ultrabater!</h1>
-  <p>Seleccioná un producto:</p>
+  <h1>¡Bienvenidos a Ultrabater!</h1>
+  <div id="carrito-icono">
+    🛒 <span id="contador-carrito">0</span>
+  </div>
 
-  <button data-id="1">Pilas alcalinas ($5000)</button>
-  <button data-id="2">Baterías para notebook ($45000)</button>
-  <button data-id="3">Batería de gel ($30000)</button>
-  <button data-id="4">Cargador para pilas recargables ($60000)</button>
-  <br><br>
-  <button id="ver-carrito">Ver total y productos</button>
-  <button id="salir">Salir de la tienda</button>
+  <div id="productos-contenedor" class="productos-grid"></div>
 
-  <div id="carrito"></div>
+  <div id="carrito-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="tituloCarrito">
+    <div class="modal-contenido">
+  <span class="cerrar-modal" role="button" aria-label="Cerrar carrito">&times;</span>
+  <h2 id="tituloCarrito">Tu carrito</h2>
+  <div id="carrito-detalle"></div>
+  <button id="salir">Finalizar compra</button>
+  <button id="vaciar-carrito">Vaciar carrito</button>
+</div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
