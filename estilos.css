@@ -246,3 +246,21 @@ button:hover {
     font-size: 14px;
   }
 }
+#carrito-detalle::-webkit-scrollbar {
+  width: 10px;
+}
+
+#carrito-detalle::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 10px;
+}
+
+#carrito-detalle::-webkit-scrollbar-thumb {
+  background: #e63946;
+  border-radius: 10px;
+  border: 2px solid #1a1a1a;
+}
+
+#carrito-detalle::-webkit-scrollbar-thumb:hover {
+  background: #b12a37;
+}
